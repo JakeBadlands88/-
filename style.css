@@ -74,6 +74,106 @@ body {
     margin: 60px auto 60px auto;
 }
 
+.review {
+    background-color: #F4EFE2;
+    padding: 81px 0 56px 0;
+}
+
+.review__title {
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 500;
+    color: #9F7303;
+    margin: 0 0 32px 0; 
+}
+
+.review__form__column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+}
+
+.review__form__item-text {
+    grid-column: 1/-1;
+}
+
+.review__form .wpcf7-text {
+    width: 100%;
+    min-height: 160px;
+    border: 1px #F5D581;
+    border-radius: 8px;
+    outline : none;
+    resize : none;
+    margin-bottom: 24px;
+    padding:  16px;
+    box-sizing: border-box;
+}
+
+.review__form .wpcf7-text::placeholder {
+    font-family: "Montserrat", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height:27px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.review__form__item-name {
+    grid-column: 1/3;
+}
+
+.review__form .wpcf7-name {
+    width: 100%;
+    border: 1px #F5D581;
+    border-radius: 8px;
+    outline : none;
+    margin-bottom: 24px;
+    padding:  16px;
+    box-sizing: border-box;
+}
+
+.review__form .wpcf7-name::placeholder {
+    font-family: "Montserrat", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height:27px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.review__form__submit {
+    grid-column: 1/2;
+}
+
+.review__form .wpcf7-submit {
+    width: 100%;
+    min-height: 64px;
+    border-radius: 8px;
+    border: 1px #9F7303;
+    background-color: #9F7303;
+    color: #FFFFFF;
+    font-family: "Montserrat", "Tahoma", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+.review__form__text-wrapper {
+    grid-column: 2/3;
+    display: flex;
+    outline: none;
+    border: none;
+}
+
+.review__form .review__form__text {
+    font-family: "Montserrat", "Tahoma", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
 .comment {
     display: grid;
     grid-template-columns: 50px 1fr;
