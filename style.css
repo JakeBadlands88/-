@@ -13,6 +13,77 @@ body {
     min-width: 1150px;
 }
 
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-primary-container ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-primary-container a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.menu-primary-container .menu-item-has-children {
+    position: relative;
+    background-image: url("img/icon-sub-menu.svg");
+    background-position: 100% center;
+    background-size: 13px 9px;
+    background-repeat: no-repeat;
+}
+
+.menu-primary-container .menu-item-has-children a {
+    padding-right: 17px;
+}
+
+.menu-primary-container .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+.menu-primary-container .sub-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    min-width: 200px;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(97, 97, 97, 0.18), 0 4px 8px rgba(97, 97, 97, 0.18);
+}
+
+.menu-primary-container .sub-menu a {
+    line-height: 22px;
+}
+
+.menu-primary-container .sub-menu li {
+    margin-bottom: 24px;
+}
+
+.menu-primary-container .menu-item-styled {
+    border: 1px solid #9f7303;
+    border-radius: 8px;
+    padding: 6px 22px;
+}
+
+.menu-primary-container .current-menu-item a {
+    color: #684C05;
+}
+
+.menu-primary-container .menu-item a:hover {
+    color: #9f7303;
+  }
+
 .page-main {
     background-color: #fefaf3;
     padding: 60px 0;
@@ -84,7 +155,7 @@ body {
     line-height: 39px;
     font-weight: 500;
     color: #9F7303;
-    margin: 0 0 32px 0; 
+    margin: 0 0 32px 0;
 }
 
 .review__form__column-wrapper {
@@ -102,17 +173,17 @@ body {
     min-height: 160px;
     border: 1px #F5D581;
     border-radius: 8px;
-    outline : none;
-    resize : none;
+    outline: none;
+    resize: none;
     margin-bottom: 24px;
-    padding:  16px;
+    padding: 16px;
     box-sizing: border-box;
 }
 
 .review__form .wpcf7-text::placeholder {
     font-family: "Montserrat", "Tahoma", sans-serif;
     font-size: 18px;
-    line-height:27px;
+    line-height: 27px;
     font-weight: 400;
     color: #000000;
 }
@@ -125,16 +196,16 @@ body {
     width: 100%;
     border: 1px #F5D581;
     border-radius: 8px;
-    outline : none;
+    outline: none;
     margin-bottom: 24px;
-    padding:  16px;
+    padding: 16px;
     box-sizing: border-box;
 }
 
 .review__form .wpcf7-name::placeholder {
     font-family: "Montserrat", "Tahoma", sans-serif;
     font-size: 18px;
-    line-height:27px;
+    line-height: 27px;
     font-weight: 400;
     color: #000000;
 }
@@ -191,19 +262,19 @@ body {
     object-fit: cover;
     background-color: tomato;
     text-indent: -100vw;
-  }
-  
-  .comment__name {
+}
+
+.comment__name {
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
     margin: 0 0 8px 0;
-  }
-  
-  .comment__text {
+}
+
+.comment__text {
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
     grid-column: 2 / 3;
     margin: 0;
-  }
+}
